@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url("./WhatsApp Image 2024-08-27 at 18.18.50_3608b37a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+input{
+    display: none;
+}
+
+.menu-icon i{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    position: absolute;
+}
+
+.heading-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.heading-menu:hover{
+    box-shadow:1px 1px 8px rgb(255, 255, 255)
+}
+
+.heading-menu label i{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.sidebar{
+    width: 25%;
+    background: rgba(255, 255, 255, 0.134);
+    height: 100vh;
+    transform: translate(-450px);
+    transition: all 0.5s;
+}
+
+.sidebar .sidebar-menu ul{
+    padding-left: 1rem;
+
+}
+
+.sidebar .sidebar-menu ul li i{
+    font-size: 1.5rem;
+   padding: 1rem;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding-left:0; 
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.sidebar ul li:hover{
+    box-shadow:2px 2px 5px white
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    padding: 2rem;
+    color: white;
+}
+
+
+.footer-icons{
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+.footer-icons ul a i{
+    color: white;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    transition: all 0.1s;
+}
+
+.footer-icons ul a  i:hover{
+    transform: scale(1.2);
+}
+
+input:checked ~ .sidebar{
+    transform: translate(0);
+}
+input:checked ~ .menu-icon i{
+    visibility: hidden;
+}
+
+
